@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.compiler_flags = '-DOS_MACOSX', '-DLEVELDB_PLATFORM_POSIX'
 
-  s.preserve_path = "leveldb-library"
+  s.preserve_path = "db", "port", "table", "util"
   s.xcconfig = {
     'CC'  => 'clang',
     'CXX' => 'clang++',
