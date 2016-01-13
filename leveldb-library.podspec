@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.header_dir = "leveldb"
   s.source_files = [
-    "include/leveldb/*",
+    "include/leveldb/*.h",
     "util/*.{h}",
     "table/*.{h}",
     "port/*.{h}",
@@ -69,11 +69,6 @@ Pod::Spec.new do |s|
     "util/options.cc",
     "util/status.cc",
     "port/port_posix.cc"
-  ]
-
-  s.public_header_files = [
-    "include/leveldb/*.{h}",
-    "include/**/*.{h}"
   ]
 
 end
