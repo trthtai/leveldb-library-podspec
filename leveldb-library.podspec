@@ -71,8 +71,6 @@ Pod::Spec.new do |s|
     "port/port_posix.cc"
   ]
 
-  s.public_header_files = [
-    "include/leveldb/*.{h}"
-  ]
+  s.public_header_files = []
 
 end
