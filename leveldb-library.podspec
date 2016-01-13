@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.xcconfig = {
     'CC'  => 'clang',
     'CXX' => 'clang++',
-    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/leveldb-library/"',
+    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/leveldb-library/" "${PODS_ROOT}/leveldb-library/include"',
     'OTHER_LDFLAGS' => '-lc++'
   }
 
@@ -69,6 +69,10 @@ Pod::Spec.new do |s|
     "util/options.cc",
     "util/status.cc",
     "port/port_posix.cc"
+  ]
+
+  s.public_header_files = [
+    "include/leveldb/*.{h}"
   ]
 
 end
