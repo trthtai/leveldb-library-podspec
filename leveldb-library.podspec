@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.source       =  { 
     :git => 'https://github.com/matehat/leveldb.git', 
-    :tag => 'v' + s.version.to_s 
+    :tag => 'v1.18.1'
   }
 
   s.requires_arc = false
