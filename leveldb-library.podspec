@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.7'
 
   s.source       =  { 
-    :git => 'https://github.com/trthtai/leveldb-library-podspec', 
+    :git => 'https://github.com/trthtai/leveldb.git', 
     :tag => 'v1.19'
   }
 
